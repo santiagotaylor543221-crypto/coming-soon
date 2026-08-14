@@ -1,0 +1,453 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Usuario Demo",
+      "email": "demo@riwicinema.com",
+      "password": "123"
+    },
+    {
+      "id": 1786370928136,
+      "name": "emmnauel",
+      "email": "emmanuel@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": 1786379071973,
+      "name": "juan martinez",
+      "email": "juanmartinez@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": 1786379219968,
+      "name": "pepe",
+      "email": "pepe@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 1786379329207,
+      "name": "leo",
+      "email": "leo@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 1786380165242,
+      "name": "lolo",
+      "email": "lolo@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 1786554443954,
+      "name": "jaime",
+      "email": "jaime@gamil.com",
+      "password": "12345678"
+    },
+    {
+      "id": 1786554540900,
+      "name": "jaime@gmail.com",
+      "email": "jaime@gmail.com",
+      "password": "123"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Thor",
+      "genre": "Acción / Aventura",
+      "duration": "114 min",
+      "rating": "7.0",
+      "poster": "https://image.tmdb.org/t/p/w500/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+      "video": "/videos/login-bg.mp4",
+      "synopsis": "El poderoso pero arrogante dios del trueno es desterrado a la Tierra y deberá demostrar que es digno de su legendario martillo, Mjölnir.",
+      "showtimes": [
+        "14:30",
+        "18:00",
+        "21:30"
+      ],
+      "price": 12.5
+    },
+    {
+      "id": 2,
+      "title": "El Secreto del Abismo",
+      "genre": "Suspenso / Misterio",
+      "duration": "132 min",
+      "rating": "4.7",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD8fd5MFF7Lmng6za5mD7VERshs7YNAX9S2Tw07yki2g&s",
+      "video": "/videos/abismo-secreto.mp4",
+      "synopsis": "Una expedición científica en las profundidades del océano Pacífico encuentra una civilización desconocida.",
+      "showtimes": [
+        "15:00",
+        "19:00",
+        "22:00"
+      ],
+      "price": 11
+    },
+    {
+      "id": 3,
+      "title": "Spider-Man: Brand New Day",
+      "genre": "Acción / Ciencia ficción",
+      "duration": "120 min",
+      "rating": "7.8",
+      "poster": "https://image.tmdb.org/t/p/w500/5WEIg4rVybYOK5QMXbJc8SAdMaZ.jpg",
+      "video": "/videos/spider-man-brand-new-day.mp4",
+      "synopsis": "Peter Parker enfrenta un nuevo comienzo mientras protege a Nueva York de una amenaza inesperada.",
+      "showtimes": [
+        "16:15",
+        "19:45",
+        "22:30"
+      ],
+      "price": 10
+    },
+    {
+      "id": 4,
+      "title": "Código Negro",
+      "genre": "Acción / Thriller",
+      "duration": "125 min",
+      "rating": "4.6",
+      "poster": "https://cdn.colombia.com/cine/2025/3/codigo-negro-44726.jpg",
+      "video": "/videos/codigo-negro.mp4",
+      "synopsis": "Un agente encubierto debe infiltrarse en la red de inteligencia artificial más peligrosa del planeta.",
+      "showtimes": [
+        "13:45",
+        "17:30",
+        "21:00"
+      ],
+      "price": 13
+    },
+    {
+      "id": 5,
+      "title": "Iron Man",
+      "genre": "Ciencia ficción / Acción",
+      "duration": "126 min",
+      "rating": "7.9",
+      "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+      "video": "/videos/iroman.mp4",
+      "synopsis": "Tony Stark crea una armadura de alta tecnología y decide usarla para proteger al mundo.",
+      "showtimes": [
+        "14:00",
+        "17:15",
+        "20:30"
+      ],
+      "price": 13.5
+    },
+    {
+      "id": 6,
+      "title": "La Odisea",
+      "genre": "Drama",
+      "duration": "148 min",
+      "rating": "8.3",
+      "poster": "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80&w=800",
+      "video": "/videos/la-odisea.mp4",
+      "synopsis": "Un héroe emprende un peligroso viaje de regreso a casa, enfrentando mares desconocidos, criaturas míticas y el paso del tiempo.",
+      "showtimes": [
+        "15:30",
+        "18:45",
+        "21:45"
+      ],
+      "price": 11.5
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1786371005097,
+      "userId": 1786370928136,
+      "userEmail": "emmanuel@gmail.com",
+      "movieId": 1,
+      "movieTitle": "Neon Horizon",
+      "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&q=80&w=800",
+      "showtime": "14:30",
+      "date": "Hoy, 10 Ago",
+      "seats": [
+        "D3"
+      ],
+      "total": 12.5,
+      "createdAt": "2026-08-10T14:10:05.094Z"
+    },
+    {
+      "id": 1786378995149,
+      "userId": 1786370928136,
+      "userEmail": "emmanuel@gmail.com",
+      "movieId": 2,
+      "movieTitle": "El Secreto del Abismo",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD8fd5MFF7Lmng6za5mD7VERshs7YNAX9S2Tw07yki2g&s",
+      "showtime": "15:00",
+      "date": "Hoy, 10 Ago",
+      "seats": [
+        "F3"
+      ],
+      "total": 11,
+      "createdAt": "2026-08-10T16:23:15.139Z"
+    },
+    {
+      "id": 1786379395728,
+      "userId": 1786379329207,
+      "userEmail": "leo@gmail.com",
+      "movieId": 1,
+      "movieTitle": "Neon Horizon",
+      "poster": "https://m.media-amazon.com/images/I/61YakdzorpS._SL500_.jpg",
+      "showtime": "14:30",
+      "date": "Hoy, 10 Ago",
+      "seats": [
+        "D2"
+      ],
+      "total": 12.5,
+      "createdAt": "2026-08-10T16:29:55.726Z"
+    },
+    {
+      "id": 1786380210007,
+      "userId": 1786380165242,
+      "userEmail": "lolo@gmail.com",
+      "movieId": 1,
+      "movieTitle": "Neon Horizon",
+      "poster": "https://m.media-amazon.com/images/I/61YakdzorpS._SL500_.jpg",
+      "showtime": "14:30",
+      "date": "Hoy, 10 Ago",
+      "seats": [
+        "D1"
+      ],
+      "total": 12.5,
+      "createdAt": "2026-08-10T16:43:30.005Z"
+    },
+    {
+      "id": 1786380950681,
+      "userId": 1786370928136,
+      "userEmail": "emmanuel@gmail.com",
+      "movieId": 1,
+      "movieTitle": "Neon Horizon",
+      "poster": "https://m.media-amazon.com/images/I/61YakdzorpS._SL500_.jpg",
+      "showtime": "14:30",
+      "date": "Hoy, 10 Ago",
+      "seats": [
+        "A1",
+        "E7"
+      ],
+      "total": 25,
+      "createdAt": "2026-08-10T16:55:50.670Z"
+    }
+  ],
+  "support": [
+    {
+      "id": 1786379272087,
+      "email": "pepe@gmail.com",
+      "subject": "Incidencia / Soporte Técnico Cinema Riwi",
+      "message": "hola tengo un erro al iniciar seccion\n",
+      "date": "2026-08-10T16:27:52.084Z",
+      "recipient": "yunpapicodsito@gmail.com",
+      "status": "Enviado con éxito a soporte"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 1,
+      "movieId": 3,
+      "movieTitle": "Spider-Man: Brand New Day",
+      "notificationDate": "2026-08-20",
+      "channel": "email",
+      "message": "Spider-Man: Brand New Day llega muy pronto a Cinema Riwi.",
+      "status": "Programada",
+      "createdAt": "2026-08-14T10:00:00.000Z"
+    }
+  ],
+  "showtimes": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "movieTitle": "Thor",
+      "time": "14:30",
+      "date": "2026-08-14",
+      "room": "Sala 1",
+      "format": "IMAX",
+      "price": 12.5,
+      "availableSeats": 120
+    },
+    {
+      "id": 2,
+      "movieId": 1,
+      "movieTitle": "Thor",
+      "time": "18:00",
+      "date": "2026-08-14",
+      "room": "Sala 1",
+      "format": "IMAX",
+      "price": 12.5,
+      "availableSeats": 120
+    },
+    {
+      "id": 3,
+      "movieId": 1,
+      "movieTitle": "Thor",
+      "time": "21:30",
+      "date": "2026-08-14",
+      "room": "Sala 1",
+      "format": "IMAX",
+      "price": 12.5,
+      "availableSeats": 120
+    },
+    {
+      "id": 4,
+      "movieId": 2,
+      "movieTitle": "El Secreto del Abismo",
+      "time": "15:00",
+      "date": "2026-08-14",
+      "room": "Sala 2",
+      "format": "2D",
+      "price": 11,
+      "availableSeats": 100
+    },
+    {
+      "id": 5,
+      "movieId": 2,
+      "movieTitle": "El Secreto del Abismo",
+      "time": "19:00",
+      "date": "2026-08-14",
+      "room": "Sala 2",
+      "format": "2D",
+      "price": 11,
+      "availableSeats": 100
+    },
+    {
+      "id": 6,
+      "movieId": 2,
+      "movieTitle": "El Secreto del Abismo",
+      "time": "22:00",
+      "date": "2026-08-14",
+      "room": "Sala 2",
+      "format": "2D",
+      "price": 11,
+      "availableSeats": 100
+    },
+    {
+      "id": 7,
+      "movieId": 3,
+      "movieTitle": "Spider-Man: Brand New Day",
+      "time": "16:15",
+      "date": "2026-08-14",
+      "room": "Sala 3",
+      "format": "IMAX",
+      "price": 10,
+      "availableSeats": 120
+    },
+    {
+      "id": 8,
+      "movieId": 3,
+      "movieTitle": "Spider-Man: Brand New Day",
+      "time": "19:45",
+      "date": "2026-08-14",
+      "room": "Sala 3",
+      "format": "IMAX",
+      "price": 10,
+      "availableSeats": 120
+    },
+    {
+      "id": 9,
+      "movieId": 3,
+      "movieTitle": "Spider-Man: Brand New Day",
+      "time": "22:30",
+      "date": "2026-08-14",
+      "room": "Sala 3",
+      "format": "IMAX",
+      "price": 10,
+      "availableSeats": 120
+    },
+    {
+      "id": 10,
+      "movieId": 4,
+      "movieTitle": "Código Negro",
+      "time": "13:45",
+      "date": "2026-08-14",
+      "room": "Sala 4",
+      "format": "2D",
+      "price": 13,
+      "availableSeats": 100
+    },
+    {
+      "id": 11,
+      "movieId": 4,
+      "movieTitle": "Código Negro",
+      "time": "17:30",
+      "date": "2026-08-14",
+      "room": "Sala 4",
+      "format": "2D",
+      "price": 13,
+      "availableSeats": 100
+    },
+    {
+      "id": 12,
+      "movieId": 4,
+      "movieTitle": "Código Negro",
+      "time": "21:00",
+      "date": "2026-08-14",
+      "room": "Sala 4",
+      "format": "2D",
+      "price": 13,
+      "availableSeats": 100
+    },
+    {
+      "id": 13,
+      "movieId": 5,
+      "movieTitle": "Iron Man",
+      "time": "14:00",
+      "date": "2026-08-14",
+      "room": "Sala 5",
+      "format": "IMAX",
+      "price": 13.5,
+      "availableSeats": 120
+    },
+    {
+      "id": 14,
+      "movieId": 5,
+      "movieTitle": "Iron Man",
+      "time": "17:15",
+      "date": "2026-08-14",
+      "room": "Sala 5",
+      "format": "IMAX",
+      "price": 13.5,
+      "availableSeats": 120
+    },
+    {
+      "id": 15,
+      "movieId": 5,
+      "movieTitle": "Iron Man",
+      "time": "20:30",
+      "date": "2026-08-14",
+      "room": "Sala 5",
+      "format": "IMAX",
+      "price": 13.5,
+      "availableSeats": 120
+    },
+    {
+      "id": 16,
+      "movieId": 6,
+      "movieTitle": "La Odisea",
+      "time": "15:30",
+      "date": "2026-08-14",
+      "room": "Sala 6",
+      "format": "2D",
+      "price": 11.5,
+      "availableSeats": 100
+    },
+    {
+      "id": 17,
+      "movieId": 6,
+      "movieTitle": "La Odisea",
+      "time": "18:45",
+      "date": "2026-08-14",
+      "room": "Sala 6",
+      "format": "2D",
+      "price": 11.5,
+      "availableSeats": 100
+    },
+    {
+      "id": 18,
+      "movieId": 6,
+      "movieTitle": "La Odisea",
+      "time": "21:45",
+      "date": "2026-08-14",
+      "room": "Sala 6",
+      "format": "2D",
+      "price": 11.5,
+      "availableSeats": 100
+    }
+  ],
+  "verificationTokens": []
+}
