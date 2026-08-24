@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"PORT=3001 tsx server/index.ts\" \"vite\"",
+    "dev": "concurrently \"tsx server/index.ts\" \"vite\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
