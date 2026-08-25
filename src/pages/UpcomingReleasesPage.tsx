@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router";
-import { Film, Sparkles, Clapperboard, ArrowLeft, Search, Filter } from "lucide-react";
+import { Film, Sparkles, Clapperboard, ArrowLeft, Search, Filter, X } from "lucide-react";
 import { VideoBackground } from "../components/VideoBackground";
 import { useUpcomingMovies } from "../components/upcoming/useUpcomingMovies";
 import { UpcomingList } from "../components/upcoming/UpcomingList";
@@ -78,36 +78,50 @@ export default function UpcomingReleasesPage() {
           </p>
         </div>
 
-        {/* Barra de Filtros y Búsqueda */}
-        <div className="liquid-glass rounded-2xl p-4 mb-8 border border-white/10 flex flex-col md:flex-row gap-4 items-center justify-between">
-          {/* Selector de Géneros en Pills */}
-          <div className="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto pb-1 md:pb-0 scrollbar-none">
-            <Filter className="w-4 h-4 text-cyan-400 shrink-0 ml-1 mr-1 hidden sm:block" />
-            {availableGenres.map((genre) => (
-              <button
-                key={genre}
-                onClick={() => setSelectedGenre(genre)}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap cursor-pointer ${
-                  selectedGenre === genre
-                    ? "bg-cyan-500 text-slate-950 shadow-[0_0_12px_rgba(6,182,212,0.6)]"
-                    : "bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white border border-white/5"
-                }`}
-              >
-                {genre}
-              </button>
-            ))}
+        {/* Barra de Filtros y Búsqueda con separación estricta para evitar colisiones */}
+        <div className="liquid-glass rounded-2xl p-4 sm:p-5 mb-8 border border-white/10 flex flex-col lg:flex-row gap-4 items-stretch lg:items-center justify-between">
+          {/* Selector de Géneros en Pills con scroll horizontal fluido y sin solapamiento */}
+          <div className="flex items-center gap-2 overflow-x-auto py-1 flex-1 min-w-0 scrollbar-thin scrollbar-thumb-white/10">
+            <div className="flex items-center gap-1 text-cyan-400 shrink-0 pl-1 pr-1">
+              <Filter className="w-4 h-4" />
+            </div>
+            <div className="flex items-center gap-1.5 shrink-0">
+              {availableGenres.map((genre) => (
+                <button
+                  key={genre}
+                  onClick={() => setSelectedGenre(genre)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
+                    selectedGenre === genre
+                      ? "bg-cyan-500 text-slate-950 shadow-[0_0_12px_rgba(6,182,212,0.6)]"
+                      : "bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white border border-white/5"
+                  }`}
+                >
+                  {genre}
+                </button>
+              ))}
+            </div>
           </div>
 
-          {/* Input de Búsqueda */}
-          <div className="relative w-full md:w-64">
-            <Search className="absolute left-3.5 top-2.5 w-4 h-4 text-slate-400" />
+          {/* Input de Búsqueda independiente con ancho fijo en pantallas grandes */}
+          <div className="relative w-full lg:w-72 shrink-0">
+            <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
             <input
               type="text"
-              placeholder="Buscar película..."
+              placeholder="Buscar película o género..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="liquid-glass-input w-full pl-9 pr-4 py-2 rounded-xl text-xs sm:text-sm placeholder:text-slate-500"
+              className="liquid-glass-input w-full pl-9 pr-8 py-2.5 rounded-xl text-xs sm:text-sm placeholder:text-slate-500"
             />
+            {searchTerm && (
+              <button
+                type="button"
+                onClick={() => setSearchTerm("")}
+                className="absolute right-2.5 top-2.5 p-1 text-slate-400 hover:text-white rounded-lg transition-colors cursor-pointer"
+                title="Limpiar búsqueda"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
           </div>
         </div>
 
