@@ -47,6 +47,12 @@
       "name": "jaime@gmail.com",
       "email": "jaime@gmail.com",
       "password": "123"
+    },
+    {
+      "id": 1787227739545,
+      "name": "yupi",
+      "email": "yupi@gmail.com",
+      "password": "123"
     }
   ],
   "movies": [
@@ -57,7 +63,7 @@
       "duration": "114 min",
       "rating": "7.0",
       "poster": "https://image.tmdb.org/t/p/w500/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
-      "video": "/videos/login-bg.mp4",
+      "video": "https://res.cloudinary.com/lnyl9lwv/video/upload/v1787315361/rwnjzio97m5yje2ur5nb.mp4",
       "synopsis": "El poderoso pero arrogante dios del trueno es desterrado a la Tierra y deberá demostrar que es digno de su legendario martillo, Mjölnir.",
       "showtimes": [
         "14:30",
@@ -73,7 +79,7 @@
       "duration": "132 min",
       "rating": "4.7",
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD8fd5MFF7Lmng6za5mD7VERshs7YNAX9S2Tw07yki2g&s",
-      "video": "/videos/abismo-secreto.mp4",
+      "video": "https://res.cloudinary.com/lnyl9lwv/video/upload/v1787315352/rzsforynmerhtavtodyc.mp4",
       "synopsis": "Una expedición científica en las profundidades del océano Pacífico encuentra una civilización desconocida.",
       "showtimes": [
         "15:00",
@@ -89,7 +95,7 @@
       "duration": "120 min",
       "rating": "7.8",
       "poster": "https://image.tmdb.org/t/p/w500/5WEIg4rVybYOK5QMXbJc8SAdMaZ.jpg",
-      "video": "/videos/spider-man-brand-new-day.mp4",
+      "video": "https://res.cloudinary.com/lnyl9lwv/video/upload/v1787315363/zzmlju7rbjfqjmhwdkbt.mp4",
       "synopsis": "Peter Parker enfrenta un nuevo comienzo mientras protege a Nueva York de una amenaza inesperada.",
       "showtimes": [
         "16:15",
@@ -105,7 +111,7 @@
       "duration": "125 min",
       "rating": "4.6",
       "poster": "https://cdn.colombia.com/cine/2025/3/codigo-negro-44726.jpg",
-      "video": "/videos/codigo-negro.mp4",
+      "video": "https://res.cloudinary.com/lnyl9lwv/video/upload/v1787315354/wmb9gaoqjbzzpxpneeie.mp4",
       "synopsis": "Un agente encubierto debe infiltrarse en la red de inteligencia artificial más peligrosa del planeta.",
       "showtimes": [
         "13:45",
@@ -121,7 +127,7 @@
       "duration": "126 min",
       "rating": "7.9",
       "poster": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
-      "video": "/videos/iroman.mp4",
+      "video": "https://res.cloudinary.com/lnyl9lwv/video/upload/v1787315357/t1nrxdnh8awxmzz5rtaw.mp4",
       "synopsis": "Tony Stark crea una armadura de alta tecnología y decide usarla para proteger al mundo.",
       "showtimes": [
         "14:00",
@@ -137,7 +143,7 @@
       "duration": "148 min",
       "rating": "8.3",
       "poster": "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80&w=800",
-      "video": "/videos/la-odisea.mp4",
+      "video": "https://res.cloudinary.com/lnyl9lwv/video/upload/v1787315359/ednfopratrdni1zyhuwq.mp4",
       "synopsis": "Un héroe emprende un peligroso viaje de regreso a casa, enfrentando mares desconocidos, criaturas míticas y el paso del tiempo.",
       "showtimes": [
         "15:30",
@@ -223,6 +229,86 @@
       ],
       "total": 25,
       "createdAt": "2026-08-10T16:55:50.670Z"
+    },
+    {
+      "id": 1789057981499,
+      "userId": 1,
+      "userEmail": "demo@riwicinema.com",
+      "movieId": 6,
+      "movieTitle": "La Odisea",
+      "poster": "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80&w=800",
+      "showtime": "15:30",
+      "date": "Hoy, 10 Ago",
+      "seats": [
+        "A1",
+        "A2",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "C1",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D8",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "total": 39.27,
+      "snacks": [
+        {
+          "snackId": 2,
+          "name": "Nachos Supreme",
+          "unitPrice": 6,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "snackId": 1,
+          "name": "Combo Clásico",
+          "unitPrice": 8.5,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1585647347384-2593bc35786b?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "snackId": 4,
+          "name": "Bebida Refrescante",
+          "unitPrice": 3.5,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "paymentMethod": "pse",
+      "createdAt": "2026-09-10T16:33:01.495Z"
     }
   ],
   "support": [
@@ -447,6 +533,198 @@
       "format": "2D",
       "price": 11.5,
       "availableSeats": 100
+    }
+  ],
+  "snacks": [
+    {
+      "id": 1,
+      "name": "Combo Clásico",
+      "category": "Combos",
+      "description": "Palomitas grandes y dos bebidas frías.",
+      "price": 8.5,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1585647347384-2593bc35786b?auto=format&fit=crop&w=600&q=80",
+      "promotion": "Ahorra 15% en combo"
+    },
+    {
+      "id": 2,
+      "name": "Nachos Supreme",
+      "category": "Snacks",
+      "description": "Nachos crujientes con queso cheddar y jalapeños.",
+      "price": 6,
+      "stock": 12,
+      "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=600&q=80",
+      "promotion": "Nuevo"
+    },
+    {
+      "id": 3,
+      "name": "Palomitas Caramelo",
+      "category": "Palomitas",
+      "description": "Palomitas dulces con caramelo artesanal.",
+      "price": 5.5,
+      "stock": 0,
+      "image": "https://images.unsplash.com/photo-1578849278619-1cf9e7b7f55f?auto=format&fit=crop&w=600&q=80",
+      "promotion": "Agotado"
+    },
+    {
+      "id": 4,
+      "name": "Bebida Refrescante",
+      "category": "Bebidas",
+      "description": "Bebida fría de 700 ml a elegir.",
+      "price": 3.5,
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80",
+      "promotion": "2x1 los martes"
+    },
+    {
+      "id": 5,
+      "name": "Chocolates Cine",
+      "category": "Dulces",
+      "description": "Chocolate con leche para compartir durante la función.",
+      "price": 4,
+      "stock": 18,
+      "image": "https://images.unsplash.com/photo-1575377222312-dd1a3d4bcd30?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "carts": [
+    {
+      "id": 1789057961228,
+      "userId": 1,
+      "userEmail": "demo@riwicinema.com",
+      "tickets": [
+        {
+          "movieId": 6,
+          "movieTitle": "La Odisea",
+          "poster": "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80&w=800",
+          "showtime": "15:30",
+          "date": "Hoy, 10 Ago",
+          "seats": [
+            "A1",
+            "A2",
+            "A5",
+            "A6",
+            "A7",
+            "A8",
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7",
+            "B8",
+            "C1",
+            "C4",
+            "C5",
+            "C6",
+            "C7",
+            "C8",
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6",
+            "D8",
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5",
+            "E6",
+            "E7",
+            "E8",
+            "F1",
+            "F2",
+            "F3",
+            "F4",
+            "F6",
+            "F7",
+            "F8"
+          ],
+          "unitPrice": 11.5,
+          "quantity": 1
+        }
+      ],
+      "snacks": [
+        {
+          "snackId": 2,
+          "name": "Nachos Supreme",
+          "unitPrice": 6,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "snackId": 1,
+          "name": "Combo Clásico",
+          "unitPrice": 8.5,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1585647347384-2593bc35786b?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "snackId": 4,
+          "name": "Bebida Refrescante",
+          "unitPrice": 3.5,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "status": "completed",
+      "expiresAt": "2026-09-10T16:47:41.228Z",
+      "createdAt": "2026-09-10T16:32:41.228Z",
+      "ticketsSubtotal": 11.5,
+      "snacksSubtotal": 21.5,
+      "subtotal": 33,
+      "promotionDiscount": 0,
+      "membershipDiscount": 0,
+      "giftcardDiscount": 0,
+      "discount": 0,
+      "tax": 6.2700000000000005,
+      "total": 39.27,
+      "updatedAt": "2026-09-10T16:32:54.521Z",
+      "completedAt": "2026-09-10T16:33:01.507Z"
+    },
+    {
+      "id": 1789058705600,
+      "userId": 1,
+      "userEmail": "demo@riwicinema.com",
+      "tickets": [
+        {
+          "movieId": 2,
+          "movieTitle": "El Secreto del Abismo",
+          "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD8fd5MFF7Lmng6za5mD7VERshs7YNAX9S2Tw07yki2g&s",
+          "showtime": "15:00",
+          "date": "Hoy, 10 Ago",
+          "seats": [
+            "B4",
+            "B5"
+          ],
+          "unitPrice": 11,
+          "quantity": 1
+        }
+      ],
+      "snacks": [
+        {
+          "snackId": 2,
+          "name": "Nachos Supreme",
+          "unitPrice": 6,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "status": "active",
+      "expiresAt": "2026-09-10T17:00:05.600Z",
+      "createdAt": "2026-09-10T16:45:05.600Z",
+      "ticketsSubtotal": 11,
+      "snacksSubtotal": 6,
+      "subtotal": 17,
+      "promotionDiscount": 0,
+      "membershipDiscount": 0,
+      "giftcardDiscount": 0,
+      "discount": 0,
+      "tax": 3.23,
+      "total": 20.23,
+      "updatedAt": "2026-09-10T16:45:36.623Z"
     }
   ],
   "verificationTokens": []
