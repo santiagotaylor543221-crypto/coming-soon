@@ -78,50 +78,53 @@ export default function UpcomingReleasesPage() {
           </p>
         </div>
 
-        {/* Barra de Filtros y Búsqueda con separación estricta para evitar colisiones */}
-        <div className="liquid-glass rounded-2xl p-4 sm:p-5 mb-8 border border-white/10 flex flex-col lg:flex-row gap-4 items-stretch lg:items-center justify-between">
-          {/* Selector de Géneros en Pills con scroll horizontal fluido y sin solapamiento */}
-          <div className="flex items-center gap-2 overflow-x-auto py-1 flex-1 min-w-0 scrollbar-thin scrollbar-thumb-white/10">
-            <div className="flex items-center gap-1 text-cyan-400 shrink-0 pl-1 pr-1">
-              <Filter className="w-4 h-4" />
-            </div>
-            <div className="flex items-center gap-1.5 shrink-0">
-              {availableGenres.map((genre) => (
+        {/* Contenedor Unificado: Búsqueda arriba y Categorías abajo perfectamente alineadas */}
+        <div className="liquid-glass rounded-2xl md:rounded-3xl p-5 sm:p-6 mb-8 border border-white/10 shadow-2xl space-y-4">
+          {/* Fila 1: Barra de Búsqueda */}
+          <div className="w-full">
+            <div className="relative w-full">
+              <Search className="absolute left-4 top-3.5 w-4 h-4 text-cyan-400" />
+              <input
+                type="text"
+                placeholder="Buscar película, género, actor..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="liquid-glass-input w-full pl-11 pr-10 py-3 rounded-xl text-sm placeholder:text-slate-400 focus:border-cyan-400 transition-all"
+              />
+              {searchTerm && (
                 <button
-                  key={genre}
-                  onClick={() => setSelectedGenre(genre)}
-                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap shrink-0 cursor-pointer ${
-                    selectedGenre === genre
-                      ? "bg-cyan-500 text-slate-950 shadow-[0_0_12px_rgba(6,182,212,0.6)]"
-                      : "bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white border border-white/5"
-                  }`}
+                  type="button"
+                  onClick={() => setSearchTerm("")}
+                  className="absolute right-3 top-3 p-1 text-slate-400 hover:text-white rounded-lg transition-colors cursor-pointer"
+                  title="Limpiar búsqueda"
                 >
-                  {genre}
+                  <X className="w-4 h-4" />
                 </button>
-              ))}
+              )}
             </div>
           </div>
 
-          {/* Input de Búsqueda independiente con ancho fijo en pantallas grandes */}
-          <div className="relative w-full lg:w-72 shrink-0">
-            <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
-            <input
-              type="text"
-              placeholder="Buscar película o género..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="liquid-glass-input w-full pl-9 pr-8 py-2.5 rounded-xl text-xs sm:text-sm placeholder:text-slate-500"
-            />
-            {searchTerm && (
+          {/* Fila 2: Categorías / Filtros (Alineados al mismo inicio y todas visibles sin scrollbar) */}
+          <div className="pt-3 border-t border-white/10 flex flex-wrap items-center gap-2 sm:gap-2.5">
+            <div className="flex items-center gap-1.5 text-cyan-400 mr-2 py-1 shrink-0">
+              <Filter className="w-4 h-4" />
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-300">
+                Categorías:
+              </span>
+            </div>
+            {availableGenres.map((genre) => (
               <button
-                type="button"
-                onClick={() => setSearchTerm("")}
-                className="absolute right-2.5 top-2.5 p-1 text-slate-400 hover:text-white rounded-lg transition-colors cursor-pointer"
-                title="Limpiar búsqueda"
+                key={genre}
+                onClick={() => setSelectedGenre(genre)}
+                className={`px-4 py-1.5 sm:py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+                  selectedGenre === genre
+                    ? "bg-cyan-500 text-slate-950 shadow-[0_0_15px_rgba(6,182,212,0.7)] font-bold scale-105"
+                    : "bg-white/5 text-slate-300 hover:bg-white/15 hover:text-white border border-white/10 hover:border-cyan-500/30"
+                }`}
               >
-                <X className="w-3.5 h-3.5" />
+                {genre}
               </button>
-            )}
+            ))}
           </div>
         </div>
 
